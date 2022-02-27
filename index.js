@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ limit: '20mb', extended: true }))
 app.use(cors());
 app.use('/posts', postRoute)
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT;
 
 app.get("/", (req,res)=>{
     res.send("Welcome to your memories")
