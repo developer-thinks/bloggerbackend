@@ -19,7 +19,7 @@ app.get("/", (req,res)=>{
     res.send("Welcome to your memories")
 })
 
-mongoose.connect(process.env.MONGo_URL, ()=>{
+mongoose.connect(process.env.MONGO_URL, ()=>{
     console.log("db connected");
 })
 
